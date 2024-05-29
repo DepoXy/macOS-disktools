@@ -1,0 +1,14 @@
+{
+  "name": "macOS-disktools",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": [
+    "bin/apfs-mount",
+    "bin/dmg-mount"
+  ],
+  "install": "make install",
+  "dependencies": {
+    "DepoXy/sh-err-trap": "release"
+  }
+}
+

@@ -19,6 +19,14 @@
 # to backup the encrypted sources themselves, which I'm not sure
 # you can do with an encrypted (or any) APFS Container or Volume).
 
+# SAVVY: APFS are dynamic volumes. / From `man diskutil`:
+#   APFS Volumes have no specified "size" (capacity). Instead, all
+#   APFS Volumes consume capacity out of the remaining free space of their
+#   parent APFS Container, consuming or returning such capacity as user file
+#   data is added or deleted. Note that this means that all Volumes within a
+#   Container compete for the Container's remaining capacity. However, you can
+#   manage Volume allocation with the optional reserve and quota size values.
+
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ #
 
 _apfsmount_source_deps() {
